@@ -1,10 +1,15 @@
 # 基于aruco进行QR码位姿的识别
 
-## １．项目地址：aruco_ros
+## １．项目地址：[aruco_ros](https://github.com/pal-robotics/aruco_ros)
 ```
 mkdir -p ~/ArUco_ws/src
 ```
 下载源代码并编译
+```
+cd ~/ArUco_ws/src
+git clone https://github.com/iseedwyane/aruco_ros.git
+cd .. && catkin_make
+```
 ```
 cd ~/ArUco_ws/src
 svn co https://github.com/GJXS1980/Graduation_Project/trunk/aruco_ros
