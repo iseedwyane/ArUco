@@ -1,6 +1,10 @@
 # Realsense D415的驱动
 ## 步骤一：安装Realsense SDK2.0 
 [官网教程](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md#installing-the-packages) 
+查询realsense pkg version
+```
+$ dpkg -l | grep realsense
+```
 
 ## 步骤二：安装Realsense ROS功能包
 1.创建工作空间
