@@ -24,3 +24,14 @@ arkerSize为aruco的尺寸大小
 
 (3)aruco的id
 markerId为aruco的id
+
+# 
+```
+roslaunch aruco_ros single_realsense.launch
+rqt_image_view 
+rostopic echo /aruco_single/pose
+```
+```
+rostopic hz /camera/color/image_raw
+rostopic list
+```
