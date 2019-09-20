@@ -27,3 +27,14 @@ source ~/.bashrc
 ```
 roslaunch realsense2_camera rs_camera.launch
 ```
+## [Debug:issue](https://github.com/IntelRealSense/librealsense/issues?utf8=%E2%9C%93&q=Frame+metadata+isn%27t+available%EF%BC%81)
+
+```
+sudo apt-get update
+sudo apt-get upgrate
+```
+```
+
+git clone https://github.com/IntelRealSense/realsense-ros.git
+cd ~/sensor_ws && catkin_make
+```
