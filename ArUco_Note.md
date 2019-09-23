@@ -1,4 +1,5 @@
 # 基于aruco进行QR码位姿的识别
+[ROS跟踪ArUco Markers](https://blog.csdn.net/learning_tortosie/article/details/83147232)
 
 ## １．项目地址：[aruco_ros](https://github.com/pal-robotics/aruco_ros)
 ```
@@ -35,3 +36,12 @@ rostopic echo /aruco_single/pose
 rostopic hz /camera/color/image_raw
 rostopic list
 ```
+
+# ArUco文件夹简单解释
+## bin文件夹
+bin目录下有一些源码自动生成的可执行文件，像是一些demo，我们可以用它们实现ArUco的一些基本功能，比如相机标定、生成二维码、检测二维码等等。
+这些可执行文件的源码都可以在你的源码包中找到，当然日后我们自己写程序的时候完全可以参考这些源码
+## include文件夹
+[link](https://blog.csdn.net/weixin_43053387/article/details/84952557)
+## lib
+是aruco的动态库。
