@@ -1,4 +1,11 @@
 # 基于aruco进行QR码位姿的识别
+
+ArUco：基于OpenCV的增强现实程序使用的最小库
+增强现实技术（Augmented Reality，简称 AR）
+The ARUCO Library has been developed by the Ava group of the Univeristy of Cordoba(Spain). It provides real-time marker based 3D pose estimation using AR markers.
+aruco库由科尔多瓦大学（西班牙）的AVA组开发。它使用AR标记，提供了基于三维位姿实时估计的标记。
+Uco 是Univeristy of Cordoba缩写
+marker的相机pose是一个从marker坐标系统到相机坐标系统的三维变换。这是由一个旋转和一个平移向量确定的。
 [ROS跟踪ArUco Markers](https://blog.csdn.net/learning_tortosie/article/details/83147232)
 
 ## １．项目地址：[aruco_ros](https://github.com/pal-robotics/aruco_ros)
