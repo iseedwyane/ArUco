@@ -1,10 +1,35 @@
 # Realsense D415的驱动
 ## 步骤一：安装Realsense SDK2.0 
-[官网教程](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md#installing-the-packages) 
+#[官网教程](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md#installing-the-packages) 
+1.添加SDK下载的源
+```
+sudo apt-key adv --keyserver keys.gnupg.net --recv-key C8B3A55A6F3EFCDE || sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C8B3A55A6F3EFCDE
+
+sudo add-apt-repository "deb http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo xenial main" -u
+```
+２．安装依赖库
+```
+sudo apt-get install librealsense2-dkms
+sudo apt-get install librealsense2-utils
+
+sudo apt-get install librealsense2-dev
+sudo apt-get install librealsense2-dbg
+```
 查询realsense pkg version
 ```
 $ dpkg -l | grep realsense
 ```
+３．更新软件
+```
+sudo apt-get update
+
+sudo apt-get upgrade
+```
+4.测试是否安装成功
+```
+realsense-viewer
+```
+
 
 ## 步骤二：安装Realsense ROS功能包
 1.创建工作空间
@@ -31,7 +56,7 @@ roslaunch realsense2_camera rs_camera.launch
 
 ```
 sudo apt-get update
-sudo apt-get upgrate
+sudo apt-get upgrade
 ```
 ```
 
@@ -49,5 +74,4 @@ Failed to load nodelet [/camera/realsense2_camera] of type [realsense2_camera/Re
 [camera/realsense2_camera-3] process has died [pid 2939, exit code 255, cmd /opt/ros/kinetic/lib/nodelet/nodelet load realsense2_camera/RealSenseNodeFactory realsense2_camera_manager __name:=realsense2_camera __log:=/home/lisen/.ros/log/c9beec2a-e11b-11e9-8f38-00d8617d3e94/camera-realsense2_camera-3.log].
 log file: /home/lisen/.ros/log/c9beec2a-e11b-11e9-8f38-00d8617d3e94/camera-realsense2_camera-3*.log
 ```
-
 
