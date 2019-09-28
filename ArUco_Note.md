@@ -18,11 +18,9 @@ cd ~/ArUco_ws/src
 git clone https://github.com/iseedwyane/aruco_ros.git
 cd .. && catkin_make
 ```
-```
-cd ~/ArUco_ws/src
-svn co https://github.com/GJXS1980/Graduation_Project/trunk/aruco_ros
-cd .. && catkin_make
-```
+
+
+
 ## 2.修改aruco码的配置文件　
 (1)在线生成aruco码　
 [ArUco markers generator](http://chev.me/arucogen/)
@@ -36,8 +34,18 @@ markerId为aruco的id
 # 
 ```
 roslaunch aruco_ros single_realsense.launch
-rqt_image_view 
+```
+rosrun rqt_iamge_view rqt_iamge_view
+```
+rqt_image_view
+```
+
+```
 rostopic echo /aruco_single/pose
+```
+```
+ssen@sen-inspiron-15-7000-gaming:~$ rostopic type /aruco_single/pose
+geometry_msgs/PoseStamped
 ```
 ```
 rostopic hz /camera/color/image_raw
